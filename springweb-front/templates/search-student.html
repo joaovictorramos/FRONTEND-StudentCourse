@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+</head>
+<body>
+    <form id="search-student-form">
+        <label for="registration-by-search">Enter the registration: </label><br>
+        <input type="text" name="registration-by-search" id="registration-by-search" required>
+        <input type="submit" value="Enter">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Registration</th>
+                    <th>Course</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-search-student">
+    
+            </tbody>
+        </table>
+    </form>
+
+    <script src="../script/get-student.js"></script>
+</body>
+</html>

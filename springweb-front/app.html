@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+</head>
+<body>
+    <h3>Student Portal</h3>
+    <div class="container">
+        <div class="div-container">
+            <ul class="btn-collect">
+                <li><a href="./templates/register-student.html">Register Student</a></li>
+                <li><a href="#" id="view-students">View Students</a></li>
+                <li><a href="#" id="search-student">Search student</a></li>
+                <li><a href="./templates/course/register-course.html">Register Course</a></li>
+            </ul>
+            <table id="viewport">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Registration</th>
+                        <th>Course</th>
+                        <th>PUT</th>
+                        <th>PATCH</th>
+                        <th>DELETE</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script/get-all-student.js"></script>
+    <script src="./script/popup/popup-get-student.js"></script>
+</body>
+</html>
