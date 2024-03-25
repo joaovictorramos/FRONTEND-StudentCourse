@@ -9,11 +9,11 @@ function findAllStudent(){
     })
     .then(response => response.json())
     .then(students => {
-        const tbody = document.getElementById('tbody')
-        tbody.innerHTML = ''
+        const tbody_student = document.getElementById('tbody-student')
+        tbody_student.innerHTML = ''
 
         students.forEach(student=>{
-            const row = tbody.insertRow()
+            const row = tbody_student.insertRow()
             const td1 = row.insertCell(0)
             const td2 = row.insertCell(1)
             const td3 = row.insertCell(2)
@@ -91,8 +91,8 @@ function deleteStudent(td){
             throw new Error('Failed to delete student')
 
         }else{
-            const tbody = document.getElementById('tbody')
-            tbody.removeChild(row)
+            const tbody_student = document.getElementById('tbody-student')
+            tbody_student.removeChild(row)
         }
     })
     .catch(error=>{

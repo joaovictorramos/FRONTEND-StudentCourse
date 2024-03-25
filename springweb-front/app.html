@@ -14,8 +14,9 @@
                 <li><a href="#" id="view-students">View Students</a></li>
                 <li><a href="#" id="search-student">Search student</a></li>
                 <li><a href="./templates/course/register-course.html">Register Course</a></li>
+                <li><a href="#" id="view-courses">View Courses</a></li>
             </ul>
-            <table id="viewport">
+            <table>
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -27,13 +28,30 @@
                         <th>DELETE</th>
                     </tr>
                 </thead>
-                <tbody id="tbody">
+                <tbody id="tbody-student">
                     
+                </tbody>
+            </table>
+            <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>PUT</th>
+                        <th>PATCH</th>
+                        <th>DELETE</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-course">
+                  
                 </tbody>
             </table>
         </div>
     </div>
     <script src="./script/get-all-student.js"></script>
     <script src="./script/popup/popup-get-student.js"></script>
+    <script src="./script/get-all-course.js"></script>
 </body>
 </html>
